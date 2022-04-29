@@ -1,0 +1,21 @@
+n=int(input())
+m=0
+l=0
+k=0
+c=0
+while(n):
+    r=n%10
+    c+=1
+    n=n//10
+    if(r%2==0):
+        l+=1
+    elif(r%2!=0):
+        m+=1
+    else:
+        k+=1
+if(l==c):
+    print("Even")
+elif(m==c):
+    print("Odd")
+else:
+    print("Mixed")
