@@ -1,7 +1,7 @@
 n=int(input())
 rev1=0
 rev2=0
-suum=0
+sum=0
 sq1=n*n
 while(n):
     rev1=rev1*10
@@ -16,5 +16,3 @@ if(sq1==rev2):
     print(True)
 else:
     print(False)
-    
- 
