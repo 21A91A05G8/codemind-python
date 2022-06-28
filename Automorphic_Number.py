@@ -10,4 +10,4 @@ while(n>0):
 if(sq%c==temp):
     print("Automorphic Number")
 else:
-    print("Not an Automorphic Number");
+    print("Not an Automorphic Number")
