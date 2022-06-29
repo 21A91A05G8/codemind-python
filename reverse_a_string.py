@@ -1,3 +1,2 @@
-s=str(input())
-rev=s[::-1]
-print(rev)
+str=input()
+print(str[::-1])
