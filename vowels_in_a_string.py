@@ -11,5 +11,3 @@ if(c!=0):
 else:
     print("False")
         
-        
-        
