@@ -1,6 +1,6 @@
-k=input()
+s=input()
 c=0
-for i in range(0,len(k)):
-    if(ord(k[i])!=32):
+for i in s:
+    if(i!=' '):
         c+=1
-print(c)
+print(c)        
