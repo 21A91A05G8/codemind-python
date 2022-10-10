@@ -1,12 +1,13 @@
-n=input()
-n=n.split()
-d='aeiou'
+s=input().split()
+b='aeiou'
+d=[]
 c=0
-for i in n:
-    k=i
+for i in s:
     c=0
-    for i in k:
-        if i in d:
+    for j in i:
+        if j in b:
             c+=1
-    print(c,end=' ')        
+    d.append(c)
+for i in d:
+    print(i,end=' ')
         
