@@ -8,5 +8,4 @@ for i in s:
         if j in b:
             c+=1
     d.append(c)
-print(min(d)) 
-        
+print(min(d))
