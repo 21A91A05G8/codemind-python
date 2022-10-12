@@ -1,8 +1,14 @@
 a,b=map(int,input().split())
-l1=list(map(int,input().split()))
-l2=list(map(int,input().split()))
-e=[]
-for i in l1:
-    if i in l2 and i not in e:
-        e.append(i)
-print(*e)
+m=list(map(int,input().split()))
+n=list(map(int,input().split()))
+d=[]
+c=0
+for i in m:
+    if i in n and i not in d:
+        d.append(i)
+        c+=1
+for i in n:
+    if i in m and i not in d:
+        d.append(i)
+        c+=1
+print(*d)
