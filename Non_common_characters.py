@@ -11,4 +11,4 @@ for i in s2:
 for i in sorted(set(k)):
     if(i!=' '):
         c+=1
-print(c)        
+print(c)      
