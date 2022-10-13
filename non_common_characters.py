@@ -10,4 +10,3 @@ for i in s2:
 for i in sorted(set(k)):
     if i!=' ':
         print(i,end='')
-        
