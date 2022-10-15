@@ -1,22 +1,16 @@
-q=input()
-n=q.split()
-#print👎
-p=[]
-m=""
-for i in n:
-    k=[]
+a=input().split()
+for i in a:
+    c=[]
+    d=[]
     for j in i:
         if j.isalpha():
-            k.append(j)
-    k=sorted(k)
-    #print(k)
-    h=0
-    m=""
-    for o in range(len(i)):
-        if i[o].isalpha():
-            m=m+k[h]
-            h+=1
+            c.append(j)
+    c.sort()
+    k=0
+    for d in range(len(i)):
+        if i[d].isalpha():
+            print(c[k],end='')
+            k+=1
         else:
-            m=m+i[o]
-    p.append(m)
-print(*p)
+            print(i[d],end='')
+    print(end=' ')
