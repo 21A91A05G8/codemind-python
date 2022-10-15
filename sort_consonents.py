@@ -1,20 +1,15 @@
-a=input()
-a=a.split()
-n=""
+a=input().split()
 for i in a:
+    c=[]
+    for j in i:
+        if j not in 'aeiou' and j.isalpha():
+            c.append(j)
+    c.sort()
     k=0
-    x=""
-    i=str(i)
-    for j in i:
-        if j not in "aeiou":
-            x+=j
-    x=sorted(x)
-    for j in i:
-        if j in"aeiou":
-            n+=j
+    for d in range(len(i)):
+        if i[d] in'aeiou':
+            print(i[d],end='')
         else:
-            n+=x[k]
+            print(c[k],end='')
             k+=1
-    n+=" "
-n=n.split()
-print(*n)
+    print(end=' ')
