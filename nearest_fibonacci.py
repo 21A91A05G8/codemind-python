@@ -1,18 +1,20 @@
 n=int(input())
-a=0
-b=1
-for i in range(2,n):
+a,b=0,1
+while(True):
     c=a+b
+    if(c>n):
+       h1=b
+       h2=c
+       break
     a=b
     b=c
-    if c<n:
-        x=c
-    if c>n:
-        y=c
-        break
-if abs(x-n)<abs(y-n):
-    print(x)
-elif abs(x-n)==abs(y-n):
-    print(x,y)
+#print(h1,h2)
+x1=abs(h1-n)
+x2=abs(h2-n)
+if(x1==x2):
+   print(h1,h2)
+elif(x1>x2):
+   print(h2)
 else:
-    print(y)
+   print(h1)
+   
